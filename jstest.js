@@ -14,6 +14,6 @@ for (let i = 0; i < query.length; i++){
 console.log(query); */
 
 // TODO: fix this
-document.addEventListener("click", function(event){
+/* document.addEventListener("click", function(event){
     event.clipboardData.setData("text/plain", event.target.innerHTML);
-});
+}); */
