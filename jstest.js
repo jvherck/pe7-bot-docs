@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", function(e) {
+    document.addEventListener("click", function(ev){
+        if (ev.target.classList.contains("commandblock")){
+            navigator.clipboard.writeText("." + ev.target.innerHTML);
+            console.log("Copied command!");
+        }
+    })
+})
+
+
 /* function getElementByXpath(path) {
     return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 }
@@ -12,8 +22,3 @@ for (let i = 0; i < query.length; i++){
     }
 }
 console.log(query); */
-
-// TODO: fix this
-/* document.addEventListener("click", function(event){
-    event.clipboardData.setData("text/plain", event.target.innerHTML);
-}); */
